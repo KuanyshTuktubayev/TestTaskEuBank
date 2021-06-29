@@ -1,0 +1,11 @@
+<% include head %>
+<p><a href="/">Вернуться на главную страницу</a></p>
+<h1>Список пользователей</h1>
+<ul id="users">
+  <% users.forEach(function(user){ %>
+    <li><%= user.name %></li>
+  <% }) %>
+</ul>
+
+<% include foot %>
+

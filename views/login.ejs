@@ -1,0 +1,21 @@
+<% var title = 'Авторизация' %>
+<% include head %>
+<p><a href="/">Вернуться</a> на главный экран</p>
+<h1>Авторизация</h1>
+<%- message %>
+Посмотрите <a href="/users">список пользователей</a> и авторизуйтесь любым из них, используя пароль "foobar".
+<form method="post" action="/auth/login">
+  <p>
+    <label>Логин:</label>
+    <input type="text" name="username">
+  </p>
+  <p>
+    <label>Пароль:</label>
+    <input type="text" name="password">
+  </p>
+  <p>
+    <input type="submit" value="Войти">
+  </p>
+</form>
+
+<% include foot %>
